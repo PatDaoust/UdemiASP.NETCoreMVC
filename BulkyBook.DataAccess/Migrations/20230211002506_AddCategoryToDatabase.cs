@@ -1,13 +1,13 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using static System.Data.Entity.Migrations.Model.UpdateDatabaseOperation;
 
 #nullable disable
 
 namespace BulkyBookWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class AddCategoryToDatabase : Migration
-    {
+    public partial class AddCategoryToDatabase : Microsoft.EntityFrameworkCore.Migrations.Migration {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {

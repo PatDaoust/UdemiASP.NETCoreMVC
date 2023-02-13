@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace BulkyBookWeb.Models {
-    public class Category {
+namespace BulkyBook.Models
+{
+    public class Category
+    {
 
         [Key]
         public int Id { get; set; }
@@ -11,7 +13,7 @@ namespace BulkyBookWeb.Models {
         public string Name { get; set; }
 
         [DisplayName("Display Order")]
-        [Range(1,100,ErrorMessage = "Display Order must be between 1 and 100 inclusively")]
+        [Range(1, 100, ErrorMessage = "Display Order must be between 1 and 100 inclusively")]
         public int DisplayOrder { get; set; }
 
         public DateTime CreatedDateTime { get; set; } = DateTime.Now;
